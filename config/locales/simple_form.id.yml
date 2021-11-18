@@ -69,7 +69,7 @@ id:
       form_challenge:
         current_password: Anda memasuki area aman
       imports:
-        data: File CSV yang diexpor dari server Mastodon lain
+        data: File CSV yang diexpor dari server Mastonaut lain
       invite_request:
         text: Ini akan membantu kami meninjau aplikasi Anda
       ip_block:

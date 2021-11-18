@@ -71,7 +71,7 @@ kmr:
       form_challenge:
         current_password: Tu dikevî qadeke ewledar
       imports:
-        data: Pelê CSV-ê ji rajekareke din a Mastodon hate derxistin
+        data: Pelê CSV-ê ji rajekareke din a Mastonaut hate derxistin
       invite_request:
         text: Ev ê alikariya me bikê bo nirxandina sepanê te
       ip_block:

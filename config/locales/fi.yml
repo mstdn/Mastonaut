@@ -2,32 +2,32 @@
 fi:
   about:
     about_hashtag_html: Nämä ovat hashtagilla <strong>#%{hashtag}</strong> merkittyjä julkisia tuuttauksia. Voit vastata niihin, jos sinulla on tili jossain päin fediversumia.
-    about_mastodon_html: Mastodon on sosiaalinen verkosto. Se on toteutettu avoimilla verkkoprotokollilla ja vapailla, avoimen lähdekoodin ohjelmistoilla, ja se toimii hajautetusti samaan tapaan kuin sähköposti.
+    about_mastodon_html: Mastonaut on sosiaalinen verkosto. Se on toteutettu avoimilla verkkoprotokollilla ja vapailla, avoimen lähdekoodin ohjelmistoilla, ja se toimii hajautetusti samaan tapaan kuin sähköposti.
     about_this: Tietoja tästä palvelimesta
     active_count_after: aktiivinen
     active_footnote: Kuukausittaiset aktiiviset käyttäjät (MAU)
     administered_by: 'Ylläpitäjä:'
     api: Rajapinta
     apps: Mobiili sovellukset
-    apps_platforms: Käytä Mastodonia iOS:llä, Androidilla tai muilla alustoilla
+    apps_platforms: Käytä Mastonautia iOS:llä, Androidilla tai muilla alustoilla
     browse_directory: Selaa profiilihakemistoa ja suodata kiinnostuksen kohteiden mukaan
     browse_local_posts: Selaa suoratoistoja julkisista viesteistä tältä palvelimelta
-    browse_public_posts: Selaa suoratoistoja julkisista viesteistä Mastodonissa
+    browse_public_posts: Selaa suoratoistoja julkisista viesteistä Mastonautissa
     contact: Ota yhteyttä
     contact_missing: Ei asetettu
     contact_unavailable: Ei saatavilla
     discover_users: Löydä käyttäjiä
     documentation: Dokumentaatio
-    federation_hint_html: Tilillä %{instance}:ssa voit seurata ihmisiä millä tahansa Mastodon-palvelimella ja sen ulkopuolella.
+    federation_hint_html: Tilillä %{instance}:ssa voit seurata ihmisiä millä tahansa Mastonaut-palvelimella ja sen ulkopuolella.
     get_apps: Kokeile mobiilisovellusta
-    hosted_on: Mastodon palvelimella %{domain}
+    hosted_on: Mastonaut palvelimella %{domain}
     instance_actor_flash: |
       Tämä on virtuaalitili, joka edustaa itse palvelinta eikä yksittäistä käyttäjää.
       Sitä käytetään yhdistämistarkoituksiin, eikä sitä saa estää, ellet halua estää koko palvelinta, jolloin sinun on käytettävä verkkotunnuksen estoa.
     learn_more: Lisätietoja
     privacy_policy: Tietosuojaseloste
     rules: Palvelimen säännöt
-    rules_html: 'Alla on yhteenveto säännöistä, joita sinun on noudatettava, jos haluat olla tili tällä Mastodonin palvelimella:'
+    rules_html: 'Alla on yhteenveto säännöistä, joita sinun on noudatettava, jos haluat olla tili tällä Mastonautin palvelimella:'
     see_whats_happening: Näe mitä tapahtuu
     server_stats: 'Palvelimen tilastot:'
     source_code: Lähdekoodi
@@ -47,12 +47,12 @@ fi:
       silenced_title: Hiljennetyt palvelimet
       suspended: 'Dataa näiltä palvelimilta ei tulla käsittelemään, tallentamaan tai jakamaan. Tämä tekee kommunikoinnin näiden käyttäjien kanssa mahdottomaksi:'
       suspended_title: Keskeytetyt palvelimet
-    unavailable_content_html: Mastodonin avulla voit yleensä tarkastella sisältöä ja olla vuorovaikutuksessa käyttäjien kanssa millä tahansa muulla palvelimella fediversessä. Nämä ovat poikkeuksia, jotka on tehty tälle palvelimelle.
+    unavailable_content_html: Mastonautin avulla voit yleensä tarkastella sisältöä ja olla vuorovaikutuksessa käyttäjien kanssa millä tahansa muulla palvelimella fediversessä. Nämä ovat poikkeuksia, jotka on tehty tälle palvelimelle.
     user_count_after:
       one: käyttäjä
       other: käyttäjät
     user_count_before: Koti
-    what_is_mastodon: Mikä on Mastodon?
+    what_is_mastodon: Mikä on Mastonaut?
   accounts:
     choices_html: "%{name} valinnat:"
     endorsements_hint: Voit suositella seuraamiasi henkilöitä web käyttöliittymän kautta, ne tulevat näkymään tähän.
@@ -625,7 +625,7 @@ fi:
         desc_html: Hyvä paikka käytösohjeille, säännöille, ohjeistuksille ja muille instanssin muista erottaville asioille. HTML-tagit käytössä
         title: Omavalintaiset laajat tiedot
       site_short_description:
-        desc_html: Näytetään sivupalkissa ja kuvauksessa. Kerro yhdessä kappaleessa, mitä Mastodon on ja mikä tekee palvelimesta erityisen.
+        desc_html: Näytetään sivupalkissa ja kuvauksessa. Kerro yhdessä kappaleessa, mitä Mastonaut on ja mikä tekee palvelimesta erityisen.
         title: Lyhyt instanssin kuvaus
       site_terms:
         desc_html: Tähän voi kirjoittaa instanssin tietosuojakäytännöstä, käyttöehdoista ja sen sellaisista asioista. HTML-tagit käytössä
@@ -716,7 +716,7 @@ fi:
     confirmation_dialogs: Vahvistusvalinnat
     discovery: Löytö
     localization:
-      body: Mastodonin ovat kääntäneet vapaaehtoiset.
+      body: Mastonautin ovat kääntäneet vapaaehtoiset.
       guide_link: https://crowdin.com/project/mastodon
       guide_link_text: Kaikki voivat osallistua.
     sensitive_content: Arkaluontoista sisältöä
@@ -744,8 +744,8 @@ fi:
     delete_account: Poista tili
     delete_account_html: Jos haluat poistaa tilisi, <a href="%{path}">paina tästä</a>. Poisto on vahvistettava.
     description:
-      prefix_invited_by_user: "@%{name} kutsuu sinut liittymään tälle Mastodonin palvelimelle!"
-      prefix_sign_up: Liity Mastodoniin tänään!
+      prefix_invited_by_user: "@%{name} kutsuu sinut liittymään tälle Mastonautin palvelimelle!"
+      prefix_sign_up: Liity Mastonautiin tänään!
       suffix: Tilillä voit seurata ihmisiä, julkaista päivityksiä ja lähetellä viestejä muille käyttäjille miltä palvelimelta tahansa ja paljon muuta!
     didnt_get_confirmation: Etkö saanut vahvistusohjeita?
     dont_have_your_security_key: Eikö sinulla ole suojausavainta?
@@ -856,7 +856,7 @@ fi:
       content: Valitettavasti jokin meni pieleen meidän päässämme.
       title: Sivu ei ole oikein
     '503': Sivua ei voitu näyttää palvelimen väliaikaisen vian vuoksi.
-    noscript_html: Mastodon-selainsovelluksen käyttöön vaaditaan JavaScript. Voit vaihtoehtoisesti kokeilla jotakin omalle käyttöjärjestelmällesi tehtyä Mastodon<a href="%{apps_path}">sovellusta</a>.
+    noscript_html: Mastonaut-selainsovelluksen käyttöön vaaditaan JavaScript. Voit vaihtoehtoisesti kokeilla jotakin omalle käyttöjärjestelmällesi tehtyä Mastonaut<a href="%{apps_path}">sovellusta</a>.
   existing_username_validator:
     not_found: paikallista käyttäjää ei löydy kyseisellä käyttäjänimellä
     not_found_multiple: "%{usernames} ei löytynyt"
@@ -1109,7 +1109,7 @@ fi:
       weibo: Weibo
     current_session: Nykyinen istunto
     description: "%{browser}, %{platform}"
-    explanation: Nämä verkkoselaimet ovat tällä hetkellä kirjautuneet Mastodon-tilillesi.
+    explanation: Nämä verkkoselaimet ovat tällä hetkellä kirjautuneet Mastonaut-tilillesi.
     ip: IP-osoite
     platforms:
       adobe_air: Adobe Air
@@ -1133,7 +1133,7 @@ fi:
     aliases: Tilin aliakset
     appearance: Ulkoasu
     authorized_apps: Valtuutetut sovellukset
-    back: Takaisin Mastodoniin
+    back: Takaisin Mastonautiin
     delete: Tilin poisto
     development: Kehittäminen
     edit_profile: Muokkaa profiilia
@@ -1221,7 +1221,7 @@ fi:
   terms:
     title: "%{instance}, käyttöehdot ja tietosuojakäytäntö"
   themes:
-    default: Mastodon
+    default: Mastonaut
   time:
     formats:
       default: "%d.%m.%Y klo %H.%M"
@@ -1236,7 +1236,7 @@ fi:
     recovery_instructions_html: Jos menetät puhelimesi, voit kirjautua tilillesi jollakin alla olevista palautuskoodeista. <strong>Pidä palautuskoodit hyvässä tallessa</strong>. Voit esimerkiksi tulostaa ne ja säilyttää muiden tärkeiden papereiden joukossa.
   user_mailer:
     backup_ready:
-      explanation: Pyysit täydellistä varmuuskopiota Mastodon-tilistäsi. Voit nyt ladata sen!
+      explanation: Pyysit täydellistä varmuuskopiota Mastonaut-tilistäsi. Voit nyt ladata sen!
       subject: Arkisto on valmiina ladattavaksi
       title: Arkiston tallennus
     warning:
@@ -1253,11 +1253,11 @@ fi:
       full_handle_hint: Kerro tämä ystävillesi, niin he voivat lähettää sinulle viestejä tai löytää sinut toisen instanssin kautta.
       review_preferences_action: Muuta asetuksia
       review_preferences_step: Käy tarkistamassa, että asetukset ovat haluamallasi tavalla. Voit valita, missä tilanteissa haluat saada sähköpostia, mikä on julkaisujesi oletusnäkyvyys jne. Jos et saa helposti pahoinvointia, voit valita, että GIF-animaatiot toistetaan automaattisesti.
-      subject: Tervetuloa Mastodoniin
-      tip_federated_timeline: Yleinen aikajana näyttää sisältöä koko Mastodon-verkostosta. Siinä näkyvät kuitenkin vain ne henkilöt, joita oman instanssisi käyttäjät seuraavat. Siinä ei siis näytetä aivan kaikkea.
+      subject: Tervetuloa Mastonautiin
+      tip_federated_timeline: Yleinen aikajana näyttää sisältöä koko Mastonaut-verkostosta. Siinä näkyvät kuitenkin vain ne henkilöt, joita oman instanssisi käyttäjät seuraavat. Siinä ei siis näytetä aivan kaikkea.
       tip_following: Oletusarvoisesti seuraat oman palvelimesi ylläpitäjiä. Etsi lisää kiinnostavia ihmisiä paikalliselta ja yleiseltä aikajanalta.
       tip_local_timeline: Paikallinen aikajana näyttää instanssin %{instance} käyttäjien julkaisut. He ovat naapureitasi!
-      tip_mobile_webapp: Jos voit lisätä Mastodonin mobiiliselaimen kautta aloitusnäytöllesi, voit vastaanottaa push-ilmoituksia. Toiminta vastaa monin tavoin tavanomaista sovellusta!
+      tip_mobile_webapp: Jos voit lisätä Mastonautin mobiiliselaimen kautta aloitusnäytöllesi, voit vastaanottaa push-ilmoituksia. Toiminta vastaa monin tavoin tavanomaista sovellusta!
       tips: Vinkkejä
       title: Tervetuloa mukaan, %{name}!
   users:
@@ -1270,7 +1270,7 @@ fi:
     signed_in_as: 'Kirjautunut henkilönä:'
     suspicious_sign_in_confirmation: Et ilmeisesti ole kirjautunut sisään tältä laitteelta aikaisemmin, joten lähetämme sähköpostiisi turvakoodin vahvistaaksesi, että se olet sinä.
   verification:
-    explanation_html: 'Voit <strong>vahvistaa itsesi profiilisi metatietojen linkkien omistajaksi.</strong>. Tätä varten linkitetyn verkkosivuston on sisällettävä linkki takaisin Mastodon -profiiliisi. Palauttavalla linkillä <strong>täytyy</strong> olla <code>rel="minä"</code> tuntomerkki. Linkin tekstisisällöllä ei ole väliä. Tässä on esimerkki:'
+    explanation_html: 'Voit <strong>vahvistaa itsesi profiilisi metatietojen linkkien omistajaksi.</strong>. Tätä varten linkitetyn verkkosivuston on sisällettävä linkki takaisin Mastonaut -profiiliisi. Palauttavalla linkillä <strong>täytyy</strong> olla <code>rel="minä"</code> tuntomerkki. Linkin tekstisisällöllä ei ole väliä. Tässä on esimerkki:'
     verification: Vahvistus
   webauthn_credentials:
     add: Lisää uusi suojausavain

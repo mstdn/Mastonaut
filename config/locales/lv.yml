@@ -2,32 +2,32 @@
 lv:
   about:
     about_hashtag_html: Šīs ir publiskas ziņas, kas atzīmētas ar <strong>#%{hashtag} </strong>. Tu vari mijiedarboties ar viņiem, ja tev ir konts jebkurā federācijas vietnē.
-    about_mastodon_html: 'Nākotnes sociālais tīkls: bez reklāmām, bez korporatīvās uzraudzības, ētisks dizains un decentralizācija! Pārvaldi savus datus ar Mastodon!'
+    about_mastodon_html: 'Nākotnes sociālais tīkls: bez reklāmām, bez korporatīvās uzraudzības, ētisks dizains un decentralizācija! Pārvaldi savus datus ar Mastonaut!'
     about_this: Par
     active_count_after: aktīvs
     active_footnote: Ikmēneša aktīvie lietotāji (IAL)
     administered_by: 'Administrē:'
     api: API
     apps: Mobilās lietotnes
-    apps_platforms: Lieto Mastodon uz iOS, Android un citām platformām
+    apps_platforms: Lieto Mastonaut uz iOS, Android un citām platformām
     browse_directory: Pārlūko profila direktoriju un atlasi pēc interesēm
     browse_local_posts: Pārlūko publisko ziņu straumi no šī servera
-    browse_public_posts: Pārlūko publisko ziņu straumi no Mastodon
+    browse_public_posts: Pārlūko publisko ziņu straumi no Mastonaut
     contact: Kontakts
     contact_missing: Nav uzstādīts
     contact_unavailable: N/A
     discover_users: Atklāj lietotājus
     documentation: Dokumentācija
-    federation_hint_html: Izmantojot kontu vietnē %{instance}, varēsi sekot cilvēkiem jebkurā Mastodon serverī un ārpus tā.
+    federation_hint_html: Izmantojot kontu vietnē %{instance}, varēsi sekot cilvēkiem jebkurā Mastonaut serverī un ārpus tā.
     get_apps: Izmēģini mobilo lietotni
-    hosted_on: Mastodon mitināts %{domain}
+    hosted_on: Mastonaut mitināts %{domain}
     instance_actor_flash: |
       Šis konts ir virtuāls aktieris, ko izmanto, lai pārstāvētu pašu serveri, nevis atsevišķu lietotāju.
       To izmanto apvienošanas nolūkos, un to nedrīkst bloķēt, ja vien nevēlies bloķēt visu instanci, un tādā gadījumā tev jāizmanto domēna bloķēšana.
     learn_more: Uzzināt vairāk
     privacy_policy: Privātuma politika
     rules: Servera noteikumi
-    rules_html: 'Tālāk ir sniegts noteikumu kopsavilkums, kas jāievēro, ja vēlies izveidot kontu šajā Mastodon serverī:'
+    rules_html: 'Tālāk ir sniegts noteikumu kopsavilkums, kas jāievēro, ja vēlies izveidot kontu šajā Mastonaut serverī:'
     see_whats_happening: Redzēt, kas notiek
     server_stats: 'Servera statistika:'
     source_code: Pirmkods
@@ -48,13 +48,13 @@ lv:
       silenced_title: Ierobežoti serveri
       suspended: 'Nekādi dati no šiem serveriem netiks apstrādāti, uzglabāti vai apmainīti, padarot neiespējamu jebkādu mijiedarbību vai saziņu ar lietotājiem no šiem serveriem:'
       suspended_title: Apturēti serveri
-    unavailable_content_html: Mastodon parasti ļauj apskatīt saturu un mijiedarboties ar lietotājiem no jebkura cita federācijas servera. Šie ir izņēmumi, kas veikti šajā konkrētajā serverī.
+    unavailable_content_html: Mastonaut parasti ļauj apskatīt saturu un mijiedarboties ar lietotājiem no jebkura cita federācijas servera. Šie ir izņēmumi, kas veikti šajā konkrētajā serverī.
     user_count_after:
       one: lietotājs
       other: lietotāji
       zero: lietotājI
     user_count_before: Mājās uz
-    what_is_mastodon: Kas ir Mastodon?
+    what_is_mastodon: Kas ir Mastonaut?
   accounts:
     choices_html: "%{name} izvēles:"
     endorsements_hint: Jūs varat apstiprināt cilvēkus, kuriem sekojat no tīmekļa saskarnes, un viņi tiks parādīti šeit.

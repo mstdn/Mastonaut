@@ -1,3 +1,17 @@
 default: styles/application.scss
 contrast: styles/contrast.scss
 mastodon-light: styles/mastodon-light.scss
+dark-red: styles/dark-red.scss
+light-red: styles/light-red.scss
+dark-green: styles/dark-green.scss
+light-green: styles/light-green.scss
+photon-dark: styles/photon-dark.scss
+photon-light: styles/photon-light.scss
+photon-green: styles/photon-green.scss
+photon-purple: styles/photon-purple.scss
+masterial-light: styles/masterial-light.scss
+masterial-dark: styles/masterial-dark.scss
+material-dark: styles/material-dark.scss
+material-light: styles/material-light.scss
+droid: styles/droid.scss
+cute: styles/cute.scss

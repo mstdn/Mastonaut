@@ -44,7 +44,7 @@ sv:
       featured_tag:
         name: 'Du kan vilja använda en av dessa:'
       imports:
-        data: CSV-fil som exporteras från en annan Mastodon-instans
+        data: CSV-fil som exporteras från en annan Mastonaut-instans
       rule:
         text: Beskriv en kort och enkel regel för användare på denna server
       sessions:

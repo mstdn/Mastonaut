@@ -1050,9 +1050,9 @@ hy:
 
       <p><strong>Ոչ պաշտօնական, ոչ իրաւական թարգմանութիւն</strong></p>
   themes:
-    contrast: Mastodon (բարձր կոնտրաստով)
-    default: Mastodon (Մուգ)
-    mastodon-light: Mastodon (Լուսավոր)
+    contrast: Mastonaut (բարձր կոնտրաստով)
+    default: Mastonaut (Մուգ)
+    mastodon-light: Mastonaut (Լուսավոր)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

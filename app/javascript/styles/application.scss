@@ -26,3 +26,12 @@
 @import 'mastodon/dashboard';
 @import 'mastodon/rtl';
 @import 'mastodon/accessibility';
+
+@import 'mods/display_breakname';
+@import 'mods/display_fullname';
+@import 'mods/display_circleavatar';
+
+.layout-multiple-columns .column {
+	flex-grow: 1;
+	max-width: 500px;
+}
