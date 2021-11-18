@@ -1429,6 +1429,20 @@ en:
     contrast: Mastonaut (High contrast)
     default: Mastonaut (Dark)
     mastodon-light: Mastonaut (Light)
+    dark-red: Red (Dark)
+    light-red: Red (Light)
+    dark-green: Green (Dark)
+    light-green: Green (Light)
+    photon-dark: Photon (Dark)
+    photon-light: Photon (Light)
+    photon-green: Photon Green (Dark)
+    photon-purple: Photon Purple (Dark)
+    masterial-dark: Mastoterial (Dark)
+    masterial-light: Mastoterial (Light)
+    material-dark: Material (Dark)
+    material-light: Material (Light)
+    droid: Android
+    cute: Sweetheart
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
