@@ -21,7 +21,7 @@ module Mastodon
     end
 
     def suffix
-      'inSPACE'
+      '+SPACE'
     end
 
     def to_a
