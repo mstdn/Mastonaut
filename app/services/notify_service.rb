@@ -22,30 +22,6 @@ class NotifyService < BaseService
     FeedManager.instance.filter?(:mentions, @notification.mention.status, @recipient)
   end
 
-  def blocked_status?
-    false
-  end
-
-  def blocked_favourite?
-    false
-  end
-
-  def blocked_follow?
-    false
-  end
-
-  def blocked_reblog?
-    false
-  end
-
-  def blocked_follow_request?
-    false
-  end
-
-  def blocked_poll?
-    false
-  end
-
   def following_sender?
     return @following_sender if defined?(@following_sender)
     @following_sender = @recipient.following?(@notification.from_account) || @recipient.requested?(@notification.from_account)
@@ -67,15 +43,17 @@ class NotifyService < BaseService
     message? && @notification.target_status.direct_visibility?
   end
 
-  # Returns true if the sender has been mentionned by the recipient up the thread
+  # Returns true if the sender has been mentioned by the recipient up the thread
   def response_to_recipient?
     return false if @notification.target_status.in_reply_to_id.nil?
 
     # Using an SQL CTE to avoid unneeded back-and-forth with SQL server in case of long threads
     !Status.count_by_sql([<<-SQL.squish, id: @notification.target_status.in_reply_to_id, recipient_id: @recipient.id, sender_id: @notification.from_account.id]).zero?
-      WITH RECURSIVE ancestors(id, in_reply_to_id, replying_to_sender) AS (
+      WITH RECURSIVE ancestors(id, in_reply_to_id, replying_to_sender, path) AS (
           SELECT
-            s.id, s.in_reply_to_id, (CASE
+            s.id,
+            s.in_reply_to_id,
+            (CASE
               WHEN s.account_id = :recipient_id THEN
                 EXISTS (
                   SELECT *
@@ -84,7 +62,8 @@ class NotifyService < BaseService
                 )
               ELSE
                 FALSE
-             END)
+             END),
+            ARRAY[s.id]
           FROM statuses s
           WHERE s.id = :id
         UNION ALL
@@ -100,10 +79,11 @@ class NotifyService < BaseService
                 )
               ELSE
                 FALSE
-             END)
+             END),
+            st.path || s.id
           FROM ancestors st
           JOIN statuses s ON s.id = st.in_reply_to_id
-          WHERE st.replying_to_sender IS FALSE
+          WHERE st.replying_to_sender IS FALSE AND NOT s.id = ANY(path)
       )
       SELECT COUNT(*)
       FROM ancestors st
@@ -141,15 +121,15 @@ class NotifyService < BaseService
 
     return blocked if message? && from_staff?
 
-    blocked ||= domain_blocking?                                 # Skip for domain blocked accounts
-    blocked ||= @recipient.blocking?(@notification.from_account) # Skip for blocked accounts
+    blocked ||= domain_blocking?
+    blocked ||= @recipient.blocking?(@notification.from_account)
     blocked ||= @recipient.muting_notifications?(@notification.from_account)
-    blocked ||= hellbanned?                                      # Hellban
-    blocked ||= optional_non_follower?                           # Options
-    blocked ||= optional_non_following?                          # Options
-    blocked ||= optional_non_following_and_direct?               # Options
+    blocked ||= hellbanned?
+    blocked ||= optional_non_follower?
+    blocked ||= optional_non_following?
+    blocked ||= optional_non_following_and_direct?
     blocked ||= conversation_muted?
-    blocked ||= send("blocked_#{@notification.type}?")           # Type-dependent filters
+    blocked ||= blocked_mention? if @notification.type == :mention
     blocked
   end
 
