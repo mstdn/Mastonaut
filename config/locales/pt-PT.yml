@@ -1,33 +1,36 @@
 ---
 pt-PT:
   about:
-    about_hashtag_html: Estes são toots públicos marcados com <strong>#%{hashtag}</strong>. Podes interagir com eles se tiveres uma conta Mastonaut.
-    about_mastodon_html: Mastonaut é uma rede social baseada em protocolos abertos da web e software livre e gratuito. É descentralizado como e-mail.
+    about_hashtag_html: Estes são toots públicos marcados com <strong>#%{hashtag}</strong>. Podes interagir com eles se tiveres uma conta Mastodon.
+    about_mastodon_html: Mastodon é uma rede social baseada em protocolos abertos da web e software livre e gratuito. É descentralizado como e-mail.
     about_this: Sobre esta instância
     active_count_after: activo
     active_footnote: Utilizadores activos mensais (UAM)
     administered_by: 'Administrado por:'
     api: API
     apps: Aplicações móveis
-    apps_platforms: Usar o Mastonaut a partir do iOS, Android e outras plataformas
+    apps_platforms: Usar o Mastodon a partir do iOS, Android e outras plataformas
     browse_directory: Navegue pelo directório de perfis e filtre por interesses
     browse_local_posts: Visualize as publicações públicas desta instância em tempo real
-    browse_public_posts: Visualize as publicações públicas do Mastonaut em tempo real
+    browse_public_posts: Visualize as publicações públicas do Mastodon em tempo real
     contact: Contacto
     contact_missing: Não configurado
     contact_unavailable: n.d.
+    continue_to_web: Continuar para a aplicação web
     discover_users: Descobrir utilizadores
     documentation: Documentação
-    federation_hint_html: Ter uma conta em %{instance} permitirá seguir pessoas em qualquer instância Mastonaut.
+    federation_hint_html: Ter uma conta em %{instance} permitirá seguir pessoas em qualquer instância Mastodon.
     get_apps: Experimente uma aplicação
-    hosted_on: Mastonaut em %{domain}
+    hosted_on: Mastodon em %{domain}
     instance_actor_flash: |
       Esta conta é um actor virtual usado para representar a própria instância e não um utilizador individual.
       É usada para motivos de federação e não deve ser bloqueada a não ser que que queira bloquear a instância por completo. Se for esse o caso, deverá usar o bloqueio de domínio.
     learn_more: Saber mais
+    logged_in_as_html: Está de momento ligado como %{username}.
+    logout_before_registering: Já tem sessão iniciada.
     privacy_policy: Política de privacidade
     rules: Regras da instância
-    rules_html: 'Abaixo está um resumo das regras que precisa seguir se pretender ter uma conta nesta instância do Mastonaut:'
+    rules_html: 'Abaixo está um resumo das regras que precisa seguir se pretender ter uma conta nesta instância do Mastodon:'
     see_whats_happening: Veja o que está a acontecer
     server_stats: 'Estatísticas da instância:'
     source_code: Código fonte
@@ -47,12 +50,12 @@ pt-PT:
       silenced_title: Servidores silenciados
       suspended: 'Nenhum dado dessas instâncias será processado, armazenado ou trocado, tornando qualquer interação ou comunicação com os utilizadores dessas instâncias impossível:'
       suspended_title: Servidores suspensos
-    unavailable_content_html: Mastonaut geralmente permite que você veja o conteúdo e interaja com utilizadores de qualquer outra instância no fediverso. Estas são as exceções desta instância em específico.
+    unavailable_content_html: Mastodon geralmente permite que você veja o conteúdo e interaja com utilizadores de qualquer outra instância no fediverso. Estas são as exceções desta instância em específico.
     user_count_after:
       one: utilizador
       other: utilizadores
     user_count_before: Casa para
-    what_is_mastodon: O que é o Mastonaut?
+    what_is_mastodon: O que é o Mastodon?
   accounts:
     choices_html: 'escolhas de %{name}:'
     endorsements_hint: Você pode, através da interface web, escolher endossar pessoas que segue, e elas aparecerão aqui.
@@ -69,7 +72,6 @@ pt-PT:
     media: Media
     moved_html: "%{name} mudou-se para %{new_profile_link}:"
     network_hidden: Esta informação não está disponível
-    never_active: Nunca
     nothing_here: Não há nada aqui!
     people_followed_by: Pessoas seguidas por %{name}
     people_who_follow: Pessoas que seguem %{name}
@@ -166,7 +168,6 @@ pt-PT:
       previous_strikes_description_html:
         one: Esta conta tem <strong>1</strong> punição.
         other: Esta conta tem <strong>%{count}</strong> punições.
-        zero: Esta conta está <strong>em situação regular</strong>.
       promote: Promover
       protocol: Protocolo
       public: Público
@@ -198,7 +199,6 @@ pt-PT:
       security_measures:
         only_password: Apenas palavra-passe
         password_and_2fa: Palavra-passe e 2FA
-        password_and_sign_in_token: Palavra-passe e token por e-mail
       sensitive: Marcar como sensível
       sensitized: marcada como sensível
       shared_inbox_url: URL da caixa de entrada compartilhada
@@ -371,7 +371,7 @@ pt-PT:
       enable: Ativar
       enabled: Ativado
       enabled_msg: Ativado com sucesso este emoji
-      image_hint: PNG de até 50KB
+      image_hint: PNG ou GIF até %{size}
       list: Lista
       listed: Listado
       new:
@@ -448,21 +448,6 @@ pt-PT:
       reject_media_hint: Remove arquivos de media armazenados localmente e rejeita descarregar novos arquivos no futuro. Irrelevante para suspensões
       reject_reports: Rejeitar denúncia
       reject_reports_hint: Ignorar todos as denúncias provenientes deste domínio. Irrelevante para suspensões
-      rejecting_media: a rejeitar ficheiros de media
-      rejecting_reports: a rejeitar denúncias
-      severity:
-        silence: silenciado
-        suspend: suspenso
-      show:
-        affected_accounts:
-          one: Uma conta na base de dados afetada
-          other: "%{count} contas na base de dados afetadas"
-          zero: Nenhuma conta na base de dados é afetada
-        retroactive:
-          silence: Não silenciar contas afetadas existentes deste domínio
-          suspend: Não suspender todas as contas existentes nesse domínio
-        title: Remover o bloqueio de domínio de %{domain}
-        undo: Anular
       undo: Anular
       view: Ver domínios bloqueados
     email_domain_blocks:
@@ -493,23 +478,49 @@ pt-PT:
       title: Seguir recomendações
       unsuppress: Restaurar recomendações de contas a seguir
     instances:
+      availability:
+        description_html:
+          one: Se a transmissão ao domínio falhar <strong>%{count} dia</strong> sem sucesso, nenhuma tentativa de transmissão será feita a menos que uma transmissão <em>proveniente</em> do domínio seja recebida.
+          other: Se a transmissão ao domínio falhar em <strong>%{count} dias diferentes</strong> sem sucesso, nenhuma tentativa de transmissão será feita a menos que uma transmissão <em>proveniente</em> do domínio seja recebida.
+        failure_threshold_reached: Limite de falhas atingido em %{date}.
+        failures_recorded:
+          one: Tentativa falhada em %{count} dia.
+          other: Tentativas em %{count} dias diferentes.
+        no_failures_recorded: Sem falhas registadas.
+        title: Disponibilidade
+        warning: A última tentativa de conectar a este servidor não foi bem sucedida
       back_to_all: Todas
       back_to_limited: Limitadas
       back_to_warning: Aviso
       by_domain: Domínio
       confirm_purge: Tem a certeza que deseja eliminar permanentemente os dados deste domínio?
+      content_policies:
+        comment: Nota interna
+        description_html: Pode definir políticas de conteúdo que serão aplicadas a todas as contas deste domínio e a qualquer um dos seus subdomínios.
+        policies:
+          reject_media: Rejeitar media
+          reject_reports: Rejeitar denúncias
+          silence: Limitar
+          suspend: Suspender
+        policy: Política
+        reason: Justificação pública
+        title: Políticas de conteúdo
+      dashboard:
+        instance_accounts_dimension: Contas mais seguidas
+        instance_accounts_measure: contas armazenadas
+        instance_followers_measure: nossos seguidores lá
+        instance_follows_measure: os seus seguidores aqui
+        instance_languages_dimension: Idiomas mais populares
+        instance_media_attachments_measure: anexos de media armazenados
+        instance_reports_measure: denúncias sobre eles
+        instance_statuses_measure: publicações armazenadas
       delivery:
         all: Todas
         clear: Limpar erros de entrega
+        failing: A falhar
         restart: Reiniciar entrega
         stop: Parar entrega
-        title: Entrega
         unavailable: Indisponível
-        unavailable_message: Entrega indisponível
-        warning: Aviso
-        warning_message:
-          one: Falhou entrega %{count} dia
-          other: Falhou entrega %{count} dias
       delivery_available: Entrega disponível
       delivery_error_days: Dias de erro de entrega
       delivery_error_hint: Se a entrega não for possível durante %{count} dias, será automaticamente marcada como não realizável.
@@ -518,7 +529,6 @@ pt-PT:
       known_accounts:
         one: "%{count} conta conhecida"
         other: "%{count} contas conhecidas"
-        zero: Nenhuma conta conhecida
       moderation:
         all: Todas
         limited: Limitadas
@@ -526,12 +536,14 @@ pt-PT:
       private_comment: Comentários privados
       public_comment: Comentários públicos
       purge: Purgar
+      purge_description_html: Se acredita que este domínio está definitivamente offline, pode excluir todos os registos de contas e dados associados a ele do seu armazenamento. Isso pode demorar algum tempo.
       title: Instâncias conhecidas
       total_blocked_by_us: Bloqueadas por nós
       total_followed_by_them: Seguidas por eles
       total_followed_by_us: Seguidas por nós
       total_reported: Denúncias sobre eles
       total_storage: Anexos de media
+      totals_time_period_hint_html: Os totais exibidos abaixo incluem dados referentes ao tempo total.
     invites:
       deactivate_all: Desativar todos
       filter:
@@ -586,6 +598,7 @@ pt-PT:
       action_taken_by: Ação tomada por
       actions:
         delete_description_html: As publicações denunciadas serão eliminadas e uma punição será registada para ajudá-lo a escalar ações em futuras infrações pela mesma conta.
+        mark_as_sensitive_description_html: A media nas publicações denunciadas será marcada como sensível e uma punição será registada para ajudá-lo a escalar ações em futuras infrações pela mesma conta.
         other_description_html: Ver mais opções para controlar o comportamento da conta e personalizar a comunicação para a conta denunciada.
         resolve_description_html: Nenhuma ação será tomada contra a conta denunciada, nenhuma punição será registada, e a denuncia será fechada.
         silence_description_html: O perfil será visível apenas para aqueles que já o seguem ou o procurem manualmente, limitando severamente o seu alcance. Pode sempre ser revertido.
@@ -606,6 +619,7 @@ pt-PT:
       forwarded: Encaminhado
       forwarded_to: Encaminhado para %{domain}
       mark_as_resolved: Marcar como resolvido
+      mark_as_sensitive: Marcar como sensível
       mark_as_unresolved: Marcar como não resolvido
       no_one_assigned: Ninguém
       notes:
@@ -711,7 +725,7 @@ pt-PT:
         desc_html: Mostrar na página de mais informações<br/>Podes usar tags HTML
         title: Página de mais informações
       site_short_description:
-        desc_html: Mostrada na barra lateral e em etiquetas de metadados. Descreve o que o Mastonaut é e o que torna esta instância especial num único parágrafo. Se deixada em branco, remete para a descrição da instância.
+        desc_html: Mostrada na barra lateral e em etiquetas de metadados. Descreve o que o Mastodon é e o que torna esta instância especial num único parágrafo. Se deixada em branco, remete para a descrição da instância.
         title: Breve descrição da instância
       site_terms:
         desc_html: Podes escrever a sua própria política de privacidade, termos de serviço, entre outras coisas. Pode utilizar etiquetas HTML
@@ -749,6 +763,7 @@ pt-PT:
       actions:
         delete_statuses: "%{name} eliminou a publicação de %{target}"
         disable: "%{name} congelou a conta de %{target}"
+        mark_statuses_as_sensitive: "%{name} marcou as publicações de %{target} como sensíveis"
         none: "%{name} enviou uma advertência a %{target}"
         sensitive: "%{name} marcou a conta de %{target} como sensível"
         silence: "%{name} limitou a conta de %{target}"
@@ -758,6 +773,11 @@ pt-PT:
     system_checks:
       database_schema_check:
         message_html: Existem migrações de base de dados pendentes. Por favor, execute-as para garantir que o aplicativo se comporte como esperado
+      elasticsearch_running_check:
+        message_html: Não foi possível conectar ao Elasticsearch. Por favor, verifique se está em execução, ou desabilite a pesquisa de texto completo
+      elasticsearch_version_check:
+        message_html: 'Versão de Elasticsearch incompatível: %{value}'
+        version_comparison: A versão de Elasticsearch %{running_version} está em execução. No entanto, é obrigatória a versão %{required_version}
       rules_check:
         action: Gerir regras da instância
         message_html: Não definiu nenhuma regra para a instância.
@@ -774,25 +794,29 @@ pt-PT:
       links:
         allow: Permitir link
         allow_provider: Permitir editor
+        description_html: Estes são links que atualmente estão a ser frequentemente partilhados por contas visiveis pelo seu servidor. Eles podem ajudar os seus utilizador a descobrir o que está a acontecer no mundo. Nenhum link é exibido publicamente até que aprove o editor. Também pode permitir ou rejeitar links individualmente.
         disallow: Não permitir link
         disallow_provider: Não permitir editor
         shared_by_over_week:
           one: Partilhado por uma pessoa na última semana
           other: Partilhado por %{count} pessoas na última semana
-          zero: Partilhado por ninguém na última semana
         title: Links em destaque
         usage_comparison: Partilhado %{today} vezes hoje, em comparação com %{yesterday} ontem
+      only_allowed: Apenas permitidos
       pending_review: Pendente de revisão
       preview_card_providers:
         allowed: Links deste editor poderão ser incluídos nos destaques
+        description_html: Estes são domínios a partir dos quais links são frequentemente partilhados no seu servidor. Estes links não serão colocados em destaque a menos que o seu domínio de origem seja aprovado. A sua aprovação (ou rejeição) estende-se a subdomínios.
         rejected: Links deste editor não serão incluídos nos destaques
         title: Editores
       rejected: Rejeitado
       statuses:
         allow: Permitir publicação
         allow_account: Permitir autor
+        description_html: Estas são publicações que o seu servidor conhece e que atualmente estão a ser frequentemente partilhadas e adicionadas aos favoritos. Isto pode ajudar os seus utilizadores, novos e retornados, a encontrar mais pessoas para seguir. Nenhuma publicação será exibida publicamente até que aprove o autor, e o autor permita que a sua conta seja sugerida a outros. Você também pode permitir ou rejeitar publicações individualmente.
         disallow: Não permitir publicação
         disallow_account: Não permitir autor
+        not_discoverable: O autor optou por não permitir que a sua conta seja sugerida a outros
         shared_by:
           one: Partilhado ou adicionado aos favoritos uma vez
           other: Partilhado e adicionado aos favoritos %{friendly_count} vezes
@@ -805,6 +829,7 @@ pt-PT:
           tag_servers_dimension: Servidores mais populares
           tag_servers_measure: servidores diferentes
           tag_uses_measure: utilizações totais
+        description_html: Estas são hashtags que aparecem atualmente com frequência em publicações visíveis pelo seu servidor. Isto pode ajudar os seus utilizadores a descobrir o que está ser mais falado no momento. Nenhuma hashtag é exibida publicamente até que a aprove.
         listable: Pode ser sugerida
         not_listable: Não será sugerida
         not_trendable: Não aparecerá nas tendências
@@ -818,8 +843,8 @@ pt-PT:
         used_by_over_week:
           one: Utilizada por uma pessoa na última semana
           other: Utilizada por %{count} pessoas na última semana
-          zero: Utilizada por ninguém na última semana
       title: Tendências
+      trending: Em destaque
     warning_presets:
       add_new: Adicionar novo
       delete: Eliminar
@@ -831,6 +856,7 @@ pt-PT:
       actions:
         delete_statuses: para elimintar as suas publicações
         disable: para congelar a sua conta
+        mark_statuses_as_sensitive: marcar as suas publicações como sensíveis
         none: uma advertência
         sensitive: marcação da sua conta como sensível
         silence: limitação da sua conta
@@ -874,7 +900,7 @@ pt-PT:
     confirmation_dialogs: Caixas de confirmação
     discovery: Descobrir
     localization:
-      body: Mastonaut é traduzido por voluntários.
+      body: Mastodon é traduzido por voluntários.
       guide_link: https://pt.crowdin.com/project/mastodon/
       guide_link_text: Todos podem contribuir.
     sensitive_content: Conteúdo sensível
@@ -902,9 +928,9 @@ pt-PT:
     delete_account: Eliminar conta
     delete_account_html: Se deseja eliminar a sua conta, pode <a href="%{path}">continuar aqui</a>. Uma confirmação será solicitada.
     description:
-      prefix_invited_by_user: "@%{name} convidou-o a juntar-se a esta instância do Mastonaut!"
-      prefix_sign_up: Inscreva-se hoje no Mastonaut!
-      suffix: Com uma conta, poderá seguir pessoas, publicar atualizações e trocar mensagens com utilizadores de qualquer instância Mastonaut e muito mais!
+      prefix_invited_by_user: "@%{name} convidou-o a juntar-se a esta instância do Mastodon!"
+      prefix_sign_up: Inscreva-se hoje no Mastodon!
+      suffix: Com uma conta, poderá seguir pessoas, publicar atualizações e trocar mensagens com utilizadores de qualquer instância Mastodon e muito mais!
     didnt_get_confirmation: Não recebeu o e-mail de confirmação?
     dont_have_your_security_key: Não tem a sua chave de segurança?
     forgot_password: Esqueceste a palavra-passe?
@@ -933,8 +959,10 @@ pt-PT:
     status:
       account_status: Estado da conta
       confirming: A aguardar que conclua a confirmação do e-mail.
+      functional: A sua conta está totalmente operacional.
       pending: A sua inscrição está pendente de revisão pela nossa equipa. Isso pode demorar algum tempo. Receberá um e-mail se a sua conta for aprovada.
       redirecting_to: A sua conta está inativa porque está atualmente a ser redirecionada para %{acct}.
+      view_strikes: Veja as punições anteriores contra a sua conta
     too_fast: Formulário enviado muito rapidamente, tente novamente.
     trouble_logging_in: Problemas em iniciar sessão?
     use_security_key: Usar chave de segurança
@@ -1008,15 +1036,19 @@ pt-PT:
       appealed_msg: O seu recurso foi submetido. Se ele for aprovado, será notificado.
       appeals:
         submit: Submeter recurso
+      approve_appeal: Aprovar recurso
       associated_report: Denúncia associada
       created_at: Data
+      description_html: Estas são ações tomadas contra a sua conta e avisos que lhe foram enviados pela equipa de %{instance}.
       recipient: Endereçado a
+      reject_appeal: Rejeitar recurso
       status: 'Publicação #%{id}'
       status_removed: Publicação já eliminada do sistema
       title: "%{action} de %{date}"
       title_actions:
         delete_statuses: Remoção de publicação
         disable: Congelamento da conta
+        mark_statuses_as_sensitive: Marcação das publicações como sensíveis
         none: Advertência
         sensitive: Marcação da conta como sensível
         silence: Limitação da conta
@@ -1040,7 +1072,7 @@ pt-PT:
       content: Desculpe, mas algo correu mal.
       title: Esta página não está correta
     '503': A página não pôde ser apresentada devido a uma falha temporária do servidor.
-    noscript_html: Para usar o aplicativo web do Mastonaut, por favor ativa o JavaScript. Alternativamente, experimenta um dos <a href="%{apps_path}">apps nativos</a> para o Mastonaut na sua plataforma.
+    noscript_html: Para usar o aplicativo web do Mastodon, por favor ativa o JavaScript. Alternativamente, experimenta um dos <a href="%{apps_path}">apps nativos</a> para o Mastodon na sua plataforma.
   existing_username_validator:
     not_found: não foi possível encontrar um utilizador local com esse nome
     not_found_multiple: não foi possível encontrar %{usernames}
@@ -1209,8 +1241,8 @@ pt-PT:
         one: Tens um novo seguidor! Boa!
         other: Tens %{count} novos seguidores! Fantástico!
       subject:
-        one: "1 nova notificação desde o último acesso \U0001F418"
-        other: "%{count} novas notificações desde o  último acesso \U0001F418"
+        one: "1 nova notificação desde o seu último acesso 🐘"
+        other: "%{count} novas notificações desde o seu último acesso 🐘"
       title: Enquanto estiveste ausente…
     favourite:
       body: 'O teu post foi adicionado aos favoritos por %{name}:'
@@ -1324,6 +1356,11 @@ pt-PT:
   reports:
     errors:
       invalid_rules: não faz referência a regras válidas
+  rss:
+    content_warning: 'Aviso de conteúdo:'
+    descriptions:
+      account: Publicações públicas de @%{acct}
+      tag: 'Publicações públicas marcadas com #%{hashtag}'
   scheduled_statuses:
     over_daily_limit: Excedeste o limite de %{limit} publicações agendadas para esse dia
     over_total_limit: Tu excedeste o limite de %{limit} publicações agendadas
@@ -1351,7 +1388,7 @@ pt-PT:
       weibo: Weibo
     current_session: Sessão atual
     description: "%{browser} em %{platform}"
-    explanation: Estes são os navegadores que estão conectados com a tua conta do Mastonaut.
+    explanation: Estes são os navegadores que estão conectados com a tua conta do Mastodon.
     ip: IP
     platforms:
       adobe_air: Adobe Air
@@ -1376,7 +1413,7 @@ pt-PT:
     aliases: Pseudónimos da conta
     appearance: Aspecto
     authorized_apps: Aplicativos autorizados
-    back: Voltar ao Mastonaut
+    back: Voltar ao Mastodon
     delete: Eliminação da conta
     development: Desenvolvimento
     edit_profile: Editar perfil
@@ -1390,6 +1427,7 @@ pt-PT:
     profile: Perfil
     relationships: Seguindo e seguidores
     statuses_cleanup: Remoção automática da publicação
+    strikes: Punições de moderação
     two_factor_authentication: Autenticação em duas etapas
     webauthn_authentication: Chaves de segurança
   statuses:
@@ -1410,7 +1448,7 @@ pt-PT:
     disallowed_hashtags:
       one: 'continha uma hashtag proibida: %{tags}'
       other: 'continha as hashtags proibidas: %{tags}'
-    edited_at: Editado em %{date}
+    edited_at_html: Editado em %{date}
     errors:
       in_reply_not_found: A publicação a que está a tentar responder parece não existir.
     open_in_web: Abrir no browser
@@ -1469,6 +1507,7 @@ pt-PT:
       '2629746': 1 mês
       '31556952': 1 ano
       '5259492': 2 meses
+      '604800': 1 semana
       '63113904': 2 anos
       '7889238': 3 meses
     min_age_label: Limite de idade
@@ -1480,6 +1519,9 @@ pt-PT:
     pinned: Toot fixado
     reblogged: partilhado
     sensitive_content: Conteúdo sensível
+  strikes:
+    errors:
+      too_late: É tarde demais para apelar desta punição
   tags:
     does_not_match_previous_name: não coincide com o nome anterior
   terms:
@@ -1490,7 +1532,7 @@ pt-PT:
       <ul>
       <li><em>Informação básica da conta</em>: Se te registares neste servidor, pode-te ser pedido que indiques um nome de utilizador, um endereço de email e uma palavra-passe. Também podes introduzir informação adicional de perfil, tal como um nome a mostrar e dados biográficos, que carregues uma fotografia para o teu perfil e para o cabeçalho. O nome de utilizador, o nome a mostrar, a biografia, a imagem de perfil e a imagem de cabeçalho são sempre listados publicamente.</li>
       <li><em>Publicações, seguimento e outra informação pública</em>: A lista de pessoas que tu segues é pública, o mesmo é verdade para os teus seguidores. Quando tu publicas uma mensagem, a data e a hora são guardados, tal como a aplicação a partir da qual a mensagem foi enviada. As mensagens podem conter anexos média, tais como fotografias ou vídeos. Publicações públicas e não listadas são acessíveis publicamente. Quando expões uma publicação no teu perfil, isso é também informação disponível publicamente. As tuas publicações são enviadas aos teus seguidores. Em alguns casos isso significa que elas são enviadas para servidores diferentes onde são guardadas cópias. Quando tu apagas publicações, isso também é enviado para os teus seguidores. A ação de republicar ou favoritar outra publicação é sempre pública.</li>
-      <li><em>Publicações diretas e exclusivas para seguidores</em>: Todas as publicações são guardadas e processadas no servidor. Publicações exclusivas para seguidores são enviadas para os teus seguidores e para utilizadores que são nelas mencionados. As publicações diretas são enviadas apenas para os utilizadores nelas mencionados. Em alguns casos isso significa que elas são enviadas para diferentes servidores onde são guardadas cópias das mesmas. Nós fazemos um grande esforço para limitar o acesso a estas publicações aos utilizadores autorizados, mas outros servidores podem falhar neste objetivo. Por isso, tu deves rever os servidores a que os teus seguidores pertencem. Tu podes ativar uma opção para aprovar e rejeitar manualmente novos seguidores nas configurações. <em>Por favor, tem em mente que os gestores do servidor e qualquer servidor que receba a publicação pode lê-la</em> e que os destinatários podem fazer uma captura de tela, copiar ou partilhar a publicação. <em>Não partilhes qualquer informação perigosa no Mastonaut.</em></li>
+      <li><em>Publicações diretas e exclusivas para seguidores</em>: Todas as publicações são guardadas e processadas no servidor. Publicações exclusivas para seguidores são enviadas para os teus seguidores e para utilizadores que são nelas mencionados. As publicações diretas são enviadas apenas para os utilizadores nelas mencionados. Em alguns casos isso significa que elas são enviadas para diferentes servidores onde são guardadas cópias das mesmas. Nós fazemos um grande esforço para limitar o acesso a estas publicações aos utilizadores autorizados, mas outros servidores podem falhar neste objetivo. Por isso, tu deves rever os servidores a que os teus seguidores pertencem. Tu podes ativar uma opção para aprovar e rejeitar manualmente novos seguidores nas configurações. <em>Por favor, tem em mente que os gestores do servidor e qualquer servidor que receba a publicação pode lê-la</em> e que os destinatários podem fazer uma captura de tela, copiar ou partilhar a publicação. <em>Não partilhes qualquer informação perigosa no Mastodon.</em></li>
       <li><em>IPs e outros metadados</em>: Quando inicias sessão, nós guardamos o endereço de IP a partir do qual iniciaste a sessão, tal como o nome do teu navegador. Todas as sessões estão disponíveis para verificação e revogação nas configurações. O último endereço de IP usado é guardado até 12 meses. Nós também podemos guardar registos de servidor, os quais incluem o endereço de IP de cada pedido dirigido ao nosso servidor.</li>
       </ul>
 
@@ -1501,7 +1543,7 @@ pt-PT:
       <p>Qualquer informação que recolhemos sobre ti pode ser usada dos seguintes modos:</p>
 
       <ul>
-      <li>Para providenciar a funcionalidade central do Mastonaut. Tu só podes interagir com o conteúdo de outras pessoas e publicar o teu próprio conteúdo depois de teres iniciado sessão. Por exemplo, tu podes seguir outras pessoas para veres as suas publicações na tua cronologia inicial personalizada. </li>
+      <li>Para providenciar a funcionalidade central do Mastodon. Tu só podes interagir com o conteúdo de outras pessoas e publicar o teu próprio conteúdo depois de teres iniciado sessão. Por exemplo, tu podes seguir outras pessoas para veres as suas publicações na tua cronologia inicial personalizada. </li>
       <li>Para ajudar na moderação da comunidade para, por exemplo, comparar o teu endereço IP com outros conhecidos, para determinar a fuga ao banimento ou outras violações.</li>
       <li>O endereço de e-mail que tu forneces pode ser usado para te enviar informações e/ou notificações sobre outras pessoas que estão a interagir com o teu conteúdo ou a enviar-te mensagens, para responderes a inquéritos e/ou outros pedidos ou questões.</li>
       </ul>
@@ -1566,9 +1608,9 @@ pt-PT:
       <p>Originalmente adaptado de <a href="https://github.com/discourse/discourse">Discourse privacy policy</a>.</p>
     title: "%{instance} Termos de Serviço e Política de Privacidade"
   themes:
-    contrast: Mastonaut (Elevado contraste)
-    default: Mastonaut
-    mastodon-light: Mastonaut (Claro)
+    contrast: Mastodon (Elevado contraste)
+    default: Mastodon
+    mastodon-light: Mastodon (Claro)
   time:
     formats:
       default: "%H:%M em %d de %b de %Y"
@@ -1600,15 +1642,16 @@ pt-PT:
       subject: O seu recurso de %{date} foi rejeitado
       title: Recurso rejeitado
     backup_ready:
-      explanation: Pediste uma cópia completa da tua conta Mastonaut. Ela já está pronta para descarregares!
+      explanation: Pediste uma cópia completa da tua conta Mastodon. Ela já está pronta para descarregares!
       subject: O teu arquivo está pronto para descarregar
       title: Arquivo de ficheiros
-    sign_in_token:
-      details: 'Aqui estão os detalhes da tentativa:'
-      explanation: 'Detectamos uma tentativa de entrar na sua conta a partir de um endereço IP não reconhecido. Se é você, por favor, insira o código de segurança abaixo na página de acesso:'
-      further_actions: 'Se não foi você, por favor altere a sua palavra-passe e ative a autenticação em duas etapzs na sua conta. Pode fazê-lo aqui:'
-      subject: Por favor, confirme a tentativa de acesso
-      title: Tentativa de acesso
+    suspicious_sign_in:
+      change_password: alterar a sua palavra-passe
+      details: 'Aqui estão os detalhes do inicio de sessão:'
+      explanation: Detetamos um inicio de sessão na sua conta a partir de um novo endereço IP.
+      further_actions_html: Se não foi você, recomendamos que %{action} imediatamente e ative a autenticação de dois fatores para manter a sua conta segura.
+      subject: A sua conta foi acessada a partir de um novo endereço IP
+      title: Novo inicio de sessão
     warning:
       appeal: Submeter um recurso
       appeal_description: Se acredita que isso é um erro, pode submeter um recurso para a equipa de %{instance}.
@@ -1616,56 +1659,55 @@ pt-PT:
         spam: Spam
         violation: O conteúdo infringe as seguintes diretrizes da comunidade
       explanation:
-        delete_statuses: Algumas das suas publicações foram consideradas como a infringir uma ou mais diretrizes da comunidade e foram subsequentemente removidas pelos moderadores de %{instance}. Futuras infrações podem resultar em acções punitivas mais severas contra a sua conta.
+        delete_statuses: Algumas das suas publicações foram consideradas como a infringir uma ou mais diretrizes da comunidade e foram subsequentemente removidas pelos moderadores de %{instance}.
         disable: Não pode mais utilizar a sua conta, mas o seu perfil e outros dados permanecem intactos. Pode solicitar uma cópia dos seus dados, alterar as definições da conta ou apagá-la.
+        mark_statuses_as_sensitive: Algumas das suas publicações foram marcadas como sensíveis pelos moderadores de %{instance}. Isto significa que as pessoas terão de clicar na media nas publicações, antes de ser exibida uma pré-visualização. No futuro, quando publicar, lembre-se que pode você mesmo marcar a media como sensível.
         sensitive: A partir de agora, todos os ficheiros de media que carregue serão marcados como sensíveis e escondidos atrás de um aviso de "clicar-para-continuar".
         silence: Pode ainda utilizar a sua conta mas apenas as pessoas que já o seguem poderão ver as suas mensagens neste servidor, e poderá ser excluído de várias funcionalidades de divulgação. No entanto, outros poderão ainda segui-lo manualmente.
         suspend: Não pode mais utilizar a sua conta, e o seu perfil e outros dados já não se encontram acessíveis. Poderá ainda iniciar sessão para solicitar uma cópia dos seus dados até os mesmos serem totalmente removidos em cerca de 30 dias, porém reteremos alguns dados básicos para o impedir evitar a suspensão.
-      get_in_touch: Se acredita tratar-se de um erro, pode responder a este e-mail para entrar em contacto com os colaboradores de %{instance}.
       reason: 'Motivo:'
-      statuses: 'Publicações que foram consideradas em infracção:'
+      statuses: 'Publicações citadas:'
       subject:
         delete_statuses: As suas publicações em %{acct} foram removidas
         disable: A tua conta %{acct} foi congelada
+        mark_statuses_as_sensitive: As suas publicações em %{acct} foram marcadas como sensíveis
         none: Aviso para %{acct}
-        sensitive: Os seus ficheiros de media em %{acct} serão marcados como sensiveis de agora em diante
+        sensitive: As suas publicações em %{acct} serão a partir de agora marcadas como sensíveis
         silence: A tua conta %{acct} foi limitada
         suspend: A tua conta %{acct} foi suspensa
       title:
         delete_statuses: Publicações removidas
         disable: Conta congelada
+        mark_statuses_as_sensitive: Publicações marcadas como sensíveis
         none: Aviso
-        sensitive: Media escondida
+        sensitive: Conta marcada como sensível
         silence: Conta limitada
         suspend: Conta suspensa
     welcome:
-      edit_profile_action: Configura o perfil
-      edit_profile_step: Podes personalizar o teu perfil carregando uma imagem de perfil e de cabeçalho ou alterando o nome a exibir, entre outras opções. Se preferires rever os novos seguidores antes deles te poderem seguir, podes tornar a tua conta privada.
-      explanation: Aqui estão algumas dicas para começares
-      final_action: Começa a publicar
-      final_step: 'Começa a publicar! Mesmo sem seguidores, as tuas mensagens públicas podem ser vistas por outros, por exemplo, na cronologia local e em hashtags. Tu podes querer apresentar-te na hashtag #introductions.'
-      full_handle: O teu nome completo
-      full_handle_hint: Isto é o que você diria aos seus amigos para que eles lhe possam enviar mensagens ou seguir a partir de outra instância.
+      edit_profile_action: Configurar o perfil
+      edit_profile_step: Pode personalizar o seu perfil carregando uma imagem de perfil e de cabeçalho ou alterando o nome a exibir, entre outras opções. Se preferir rever os novos seguidores antes de estes o poderem seguir, pode tornar a sua conta privada.
+      explanation: Aqui estão algumas dicas para começar
+      final_action: Começar a publicar
+      final_step: 'Começa a publicar! Mesmo sem seguidores, as suas mensagens públicas podem ser vistas por outros, por exemplo, na cronologia local e em hashtags. Pode querer apresentar-se utilizando a hashtag #introduções ou #introductions.'
+      full_handle: O seu nome completo
+      full_handle_hint: Isto é o que tem de facultar aos seus amigos para que eles lhe possam enviar mensagens ou seguir a partir de outra instância.
       review_preferences_action: Alterar preferências
-      review_preferences_step: Certifique-se de configurar as suas preferências, tais como os e-mails que gostaria de receber ou o nível de privacidade que deseja que as suas publicações tenham por defeito. Se não sofres de enjoo, podes ativar a opção de auto-iniciar GIFs.
-      subject: Bem-vindo ao Mastonaut
-      tip_federated_timeline: A cronologia federativa é uma visão global da rede Mastonaut. Mas só inclui pessoas que os teus vizinhos subscrevem, por isso não é uma visão completa.
+      review_preferences_step: Certifique-se de configurar as suas preferências, tais como os e-mails que gostaria de receber ou o nível de privacidade que deseja que as suas publicações tenham por defeito. Se não sofre de enjoo de movimento, pode ativar a opção de auto-iniciar GIFs.
+      subject: Bem-vindo ao Mastodon
+      tip_federated_timeline: A cronologia federativa é uma visão global da rede Mastodon. Mas só inclui pessoas que os teus vizinhos subscrevem, por isso não é uma visão completa.
       tip_following: Segues o(s) administrador(es) do teu servidor por defeito. Para encontrar mais pessoas interessantes, procura nas cronologias local e federada.
       tip_local_timeline: A cronologia local é uma visão global das pessoas em %{instance}. Estes são os seus vizinhos mais próximos!
-      tip_mobile_webapp: Se o teu navegador móvel te oferecer a possibilidade de adicionar o Mastonaut ao teu homescreen, tu podes receber notificações push. Ele age como uma aplicação nativa de vários modos!
+      tip_mobile_webapp: Se o teu navegador móvel te oferecer a possibilidade de adicionar o Mastodon ao teu homescreen, tu podes receber notificações push. Ele age como uma aplicação nativa de vários modos!
       tips: Dicas
       title: Bem-vindo a bordo, %{name}!
   users:
     follow_limit_reached: Não podes seguir mais do que %{limit} pessoas
-    generic_access_help_html: Problemas para aceder à sua conta? Pode entrar em contacto com %{email} para obter ajuda
     invalid_otp_token: Código de autenticação inválido
-    invalid_sign_in_token: Cógido de segurança inválido
     otp_lost_help_html: Se perdeu acesso a ambos, pode entrar em contacto com %{email}
     seamless_external_login: Tu estás ligado via um serviço externo. Por isso, as configurações da palavra-passe e do e-mail não estão disponíveis.
     signed_in_as: 'Registado como:'
-    suspicious_sign_in_confirmation: Parece que não iniciou sessão através deste dispositivo antes, e não acede à sua conta há algum tempo. Portanto, enviámos um código de segurança para o seu endereço de e-mail para confirmar que é você.
   verification:
-    explanation_html: 'Pode <strong>comprovar que é o dono dos links nos metadados do seu perfil</strong>. Para isso, o website para o qual o link aponta tem de conter um link para o seu perfil do Mastonaut. Esse link <strong>tem</strong> de ter um atributo <code>rel="me"</code>. O conteúdo do texto não é relevante. Aqui está um exemplo:'
+    explanation_html: 'Pode <strong>comprovar que é o dono dos links nos metadados do seu perfil</strong>. Para isso, o website para o qual o link aponta tem de conter um link para o seu perfil do Mastodon. Esse link <strong>tem</strong> de ter um atributo <code>rel="me"</code>. O conteúdo do texto não é relevante. Aqui está um exemplo:'
     verification: Verificação
   webauthn_credentials:
     add: Adicionar nova chave de segurança

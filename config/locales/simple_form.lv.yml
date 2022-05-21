@@ -37,8 +37,7 @@ lv:
         current_password: Drošības nolūkos, lūdzu, ievadi pašreizējā konta paroli
         current_username: Lai apstiprinātu, lūdzu, ievadi pašreizējā konta paroli
         digest: Sūta tikai pēc ilgstošas neaktivitātes un tikai tad, ja savas prombūtnes laikā neesi saņēmis personiskas ziņas
-        discoverable: Ļauj svešiniekiem atklāt savu kontu caur ieteikumiem, profila direktoriju un citām iespējām
-        discoverable_no_directory: Ļauj svešiniekiem atklāt savu kontu caur ieteikumiem un citām iespējām
+        discoverable: Ļauj svešiniekiem atklāt savu kontu caur ieteikumiem, tendencēm un citām iespējām
         email: Tev tiks nosūtīts apstiprinājuma e-pasts
         fields: Savā profilā kā tabulu vari parādīt līdz 4 vienumiem
         header: PNG, GIF vai JPG. Ne vairāk kā %{size}. Tiks samazināts līdz %{dimensions}px
@@ -50,6 +49,7 @@ lv:
         phrase: Tiks saskaņots neatkarīgi no ziņas teksta reģistra vai satura brīdinājuma
         scopes: Kuriem API lietojumprogrammai būs atļauta piekļuve. Ja izvēlies augstākā līmeņa tvērumu, tev nav jāatlasa atsevišķi vienumi.
         setting_aggregate_reblogs: Nerādīt jaunus palielinājumus ziņām, kas nesen tika palielinātas (ietekmē tikai nesen saņemtos palielinājumus)
+        setting_always_send_emails: Parasti e-pasta paziņojumi netiek sūtīti, kad aktīvi izmantojat Mastodon
         setting_default_sensitive: Sensitīvi mediji pēc noklusējuma ir paslēpti, un tos var atklāt, noklikšķinot
         setting_display_media_default: Paslēpt mediju, kas atzīmēts kā sensitīvs
         setting_display_media_hide_all: Vienmēr slēpt medijus
@@ -152,6 +152,7 @@ lv:
         phrase: Atslēgvārds vai frāze
         setting_advanced_layout: Iespējot paplašināto web interfeisu
         setting_aggregate_reblogs: Grupēt paaugstinājumus ziņu lentās
+        setting_always_send_emails: Vienmēr sūtīt e-pasta paziņojumus
         setting_auto_play_gif: Automātiski atskaņot animētos GIF
         setting_boost_modal: Parādīt apstiprinājuma dialogu pirms paaugstināšanas
         setting_crop_images: Apgrieziet attēlus neizvērstajās ziņās līdz 16x9
